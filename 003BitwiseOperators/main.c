@@ -14,20 +14,19 @@ void calculate_the_maximum(int n, int k)
     {
         for (int i = 1; i < j; i++)
         {
-            maxAnd = (((i&j) > maxAnd) && ((i&j) < k)) ? (i&j) : maxAnd;
+            maxAnd = (((i & j) > maxAnd) && ((i & j) < k)) ? (i & j) : maxAnd;
             printf(" %d & %d: = %d\t", i, j, i & j);
 
-            maxOr = (((i|j) > maxOr) && ((i|j) < k)) ? (i|j) : maxOr;
+            maxOr = (((i | j) > maxOr) && ((i | j) < k)) ? (i | j) : maxOr;
             printf(" %d | %d: = %d\t", i, j, i | j);
 
-            maxXOr = (((i^j) > maxXOr) && ((i^j) < k)) ? (i^j) : maxOr;
+            maxXOr = (((i ^ j) > maxXOr) && ((i ^ j) < k)) ? (i ^ j) : maxXOr;
             printf(" %d ^ %d: = %d\n", i, j, i ^ j);
         }
-
     }
-        printf("%d\n", maxAnd);
-        printf("%d\n", maxOr);
-        printf("%d\n", maxXOr);
+    printf("%d\n", maxAnd);
+    printf("%d\n", maxOr);
+    printf("%d\n", maxXOr);
 }
 
 int main()
