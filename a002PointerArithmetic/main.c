@@ -21,11 +21,18 @@ int main(void)
 
     printf("Size of uint8_t: \t%lu byte\n", sizeof(uint8_t));
     printf("Size of uint16_t: \t%lu bytes\n", sizeof(uint16_t));
-    printf("Size of uint32_t: \t%lu bytes\n\n", sizeof(uint32_t));
+    printf("Size of uint32_t: \t%lu bytes\n", sizeof(uint32_t));
+   printf("Size of uint64_t: \t%lu bytes\n\n", sizeof(uint64_t));
 
     printf("Size of char: \t\t%lu bytes\n", sizeof(char));
     printf("Size of short: \t\t%lu bytes\n", sizeof(short));
     printf("Size of int: \t\t%lu bytes\n", sizeof(int));
     printf("Size of float: \t\t%lu bytes\n", sizeof(float));
     printf("Size of double: \t%lu bytes\n", sizeof(double));
+
+    int a=2;
+    int *ptr3;
+    ptr3 = &a;
+    printf("size of ptr:%lu",sizeof(ptr3));
+    
 }
