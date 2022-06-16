@@ -7,7 +7,6 @@ void swapTemp(int *ptr1, int *ptr2);
 void swapMath(int *ptr1, int *ptr2);
 void swapMemCpy(void *ptr1, void *ptr2, int size);
 
-
 int main(void)
 {
 
@@ -57,4 +56,5 @@ void swapMemCpy(void *ptr1, void *ptr2, int size)
     memcpy(tempMem, ptr1, size);
     memcpy(ptr1, ptr2, size);
     memcpy(ptr2, tempMem, size);
+    free(tempMem);
 }
