@@ -9,15 +9,17 @@ int main(void)
 
     int n;
     // scanf("%d", &n);
-    n = 7;
+    n = 9;
 
     for (int i = -n + 1; i < n; i++)
     {
         for (int j = -n + 1; j < n; j++)
         {
             printf("%d ", MAX(abs(i), abs(j)) + 1);
+            fflush(stdout);
         }
         printf("\n");
+        fflush(stdout);
     }
     return 0;
 }
